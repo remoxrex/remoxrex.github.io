@@ -1,145 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Remo Bora</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remo Bora</title>
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #090d1f, #16213e, #0f3460);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: white;
-    }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#090d1f,#16213e,#0f3460);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
+color:white;
+}
 
-    header {
-      text-align: center;
-      padding: 90px 20px 60px;
-    }
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+header{
+text-align:center;
+padding:90px 20px 60px;
+}
 
-    header p {
-      font-size: 1.4rem;
-      opacity: 0.8;
-      margin-top: 10px;
-    }
+header h1{
+font-size:3.5rem;
+margin:0;
+font-weight:700;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 20px 0;
-    }
+header p{
+font-size:1.4rem;
+opacity:0.8;
+margin-top:10px;
+}
 
-    nav a {
-      color: #00eaff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: 0.3s;
-    }
+.hire-btn{
+display:inline-block;
+margin-top:25px;
+background:#00eaff;
+color:black;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
 
-    nav a:hover {
-      color: white;
-      text-shadow: 0 0 10px white;
-    }
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px 0;
+}
 
-    .container {
-      max-width: 950px;
-      margin: 50px auto;
-      padding: 30px;
-      background: rgba(255,255,255,0.07);
-      border-radius: 18px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
+nav a{
+color:#00eaff;
+text-decoration:none;
+font-weight:600;
+font-size:1.1rem;
+}
 
-    .section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 14px;
-      color: #00eaff;
-      font-weight: 600;
-    }
+nav a:hover{
+color:white;
+text-shadow:0 0 10px white;
+}
 
-    .section p {
-      line-height: 1.8;
-      font-size: 1.15rem;
-      opacity: 0.95;
-    }
+.container{
+max-width:950px;
+margin:50px auto;
+padding:30px;
+background:rgba(255,255,255,0.07);
+border-radius:18px;
+backdrop-filter:blur(12px);
+box-shadow:0 4px 20px rgba(0,0,0,0.3);
+}
 
-    .social-links {
-      text-align: center;
-      margin-top: 50px;
-    }
+.section h2{
+font-size:2rem;
+color:#00eaff;
+margin-bottom:10px;
+}
 
-    .social-links a {
-      color: #00eaff;
-      text-decoration: none;
-      font-size: 1.3rem;
-      margin: 0 18px;
-      transition: 0.3s;
-      font-weight: 600;
-    }
+.section p{
+line-height:1.8;
+font-size:1.1rem;
+}
 
-    .social-links a:hover {
-      color: white;
-      text-shadow: 0 0 10px white;
-    }
+.social-links{
+text-align:center;
+margin-top:50px;
+}
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      opacity: 0.6;
-      margin-top: 60px;
-      font-size: 0.95rem;
-    }
-  </style>
+.social-links a{
+color:#00eaff;
+text-decoration:none;
+font-size:1.2rem;
+display:block;
+margin:10px 0;
+}
+
+.social-links a:hover{
+color:white;
+text-shadow:0 0 10px white;
+}
+
+footer{
+text-align:center;
+padding:25px;
+opacity:0.6;
+margin-top:60px;
+font-size:0.9rem;
+}
+
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Remo Bora</h1>
-    <p>Web Developer • Creative Mind</p>
-  </header>
+<header>
+<h1>Remo Bora</h1>
+<p>Web Developer • Creative Mind</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<a href="#contact" class="hire-btn">Hire Me</a>
+</header>
 
-  <div class="container" id="about">
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        My name is Remo Bora. This is an example website created to showcase my web development skills.
-      </p>
-    </div>
-  </div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <div class="social-links" id="contact">
-    <h2>Contact Me</h2>
-    <a href="mailto:gp027831@gmail.com">Email: gp027831@gmail.com</a>
-  </div>
+<div class="container" id="about">
+<div class="section">
+<h2>About Me</h2>
+<p>
+My name is Remo Bora. This is an example website created to showcase my web development skills.
+</p>
+</div>
+</div>
 
-  <footer>
-    © 2025 Remo Bora. All rights reserved.
-  </footer>
+<div class="container" id="services">
+<div class="section">
+<h2>Services & Pricing</h2>
+
+<p><b>Personal Website:</b> ₹500</p>
+<p><b>Business Website:</b> ₹2000</p>
+<p><b>Website Maintenance:</b> ₹5000 / month</p>
+<p><b>Website Security:</b> ₹3500 / month</p>
+
+</div>
+</div>
+
+<div class="social-links" id="contact">
+<h2>Contact Me</h2>
+
+<a href="mailto:gp027831@gmail.com">
+📧 Email: gp027831@gmail.com
+</a>
+
+<a href="https://instagram.com/yourusername">
+📷 Instagram
+</a>
+
+</div>
+
+<footer>
+© 2025 Remo Bora. All rights reserved.
+</footer>
 
 </body>
 </html>
